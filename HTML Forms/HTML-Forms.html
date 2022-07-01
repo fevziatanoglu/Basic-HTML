@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/still.css" rel="stylesheet">
+
+    <style>
+   
+     
+
+
+    </style>
+    <title>Learn HTML5</title>
+    
+</head>
+<body>
+
+
+    <!-- mehod of post does not show your values at top bar-->
+    <!-- mehod of get does show your values-->
+    <form action="#" method="get">
+
+<fieldset>
+  
+<legend>Name Informations</legend>
+
+    <label for="name">Name    : </label>
+    <input type="text" id="name" name="name">
+
+    <br> <br>
+
+    <label for="surname">Surname : </label>
+    <input type="text" id="surname" name="surname">
+
+</fieldset>
+
+<label for="languages">Language:</label>
+<input list="languageList" name="languages" id="languages";>
+
+<datalist id="languageList" >
+    <option value="TR">Türkçe</option>
+    <option value="EN">English</option>
+    <option value="DE">Germany</option>
+</datalist>>
+
+
+        
+
+        <br><br>
+
+        <label for="man">Man :</label>
+        <input type="radio" name="sex" value="man" id="man">
+
+        <br>
+
+        <label for="women">Woman :</label>
+        <input type="radio" name="sex" value="women" id="women">
+
+        <br><br>
+
+        <label for="bluechb">blue</label>
+        <input type="checkbox" name="bluechb" id="blue" value="blue">
+
+        <label for="yellowchb">yellow</label>
+        <input type="checkbox" name="yellowchb" id="yellow" value="yellow">
+
+        <label for="redchb">red</label>
+        <input type="checkbox" name="redchb" id="red" value="red">
+
+
+
+        <br><br>
+        
+        <label for="countries">Country</label>
+        <select name="countries" id="countries">
+            <option value=></option>
+            <option value="Turkey">Turkey</option>
+            <option value="England">England</option>
+            <option value="Germany">Germany</option>
+            <option value="Romania">Romania</option>
+        </select>
+
+        <br><br>
+
+        <label for="messageText">Your message:</label>
+        <br>
+        <textarea name="messageText" id="messageText" cols="30" rows="10"></textarea>
+
+        <br><br>
+
+        <label for="adressText">Your adress:</label>
+        <br>
+        <textarea name="adressText" id="adressText" cols="30" rows="1"></textarea>
+
+        <br><br>
+
+        <button type="button">You can put images here</button>
+        <input type="button" value="But you can not here">
+
+        <br><br>
+
+
+         <input type="text" readonly size="20" value="Only read and size 20">
+         <input type="text" maxlength="5" placeholder="You can not write more than maxsize 5">
+         <br>
+          <input type="text" required size="45" placeholder="You have to fill this field because it's requaired">
+         <br>
+
+        <input type="number"> 
+         <input type="range">
+
+ <br> 
+        <input type="submit" value="Submit">
+        <input type="submit" value="Submit SomeWhereElse" formaction="SomeWhereElse.html">
+        <input type="reset" value="Reset">
+        <input type="button" onclick="alert('Nothing happend.')" value="Click for nothing" >
+       
+
+    </form>
+
+</body>
+</html>
