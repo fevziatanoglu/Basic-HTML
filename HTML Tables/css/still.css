@@ -1,0 +1,21 @@
+
+ #tablo1 tr:nth-child(odd){
+    background-color:  darkblue ;
+}
+
+#tablo1 tr:nth-child(even){
+    background-color:  lightblue ;
+}
+
+table,td{
+ font-size: 60px;
+ color: azure;
+}
+
+body{
+    background-color: green;
+}
+
+
+
+
