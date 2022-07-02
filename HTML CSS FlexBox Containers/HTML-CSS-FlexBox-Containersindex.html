@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/still.css" rel="stylesheet">
+
+    <style>
+
+      body{
+
+        background-color: black;
+    }
+
+       .container1{
+        height: 50em;
+        width: 100em;
+        background-color: brown;
+
+        display: flex;
+
+        flex-direction: row;
+
+        /*Sıralama icin ve araları ayarlamak için*/
+        justify-content: center;
+        justify-content: space-around;
+        flex-direction: row-reverse; 
+
+        /*Aynı row icindekı elemanları sıralar*/
+        align-items: stretch;
+
+
+        /*ekran kuculdugunde tasmayı engeller*/
+        
+        overflow: hidden;
+       }
+
+       .container2{
+        height: 50em;
+        width: 100em;
+        background-color: brown;
+
+        display: flex;
+
+        flex-direction: column;
+
+        justify-content: end;
+        justify-content: space-between;
+        flex-direction: ;
+
+        /*butun yapıyı sıralar*/
+        align-content: stretch;
+
+        /*tasmayi engellerken yuksekligi degistirir*/
+        flex-wrap: wrap;
+       }
+
+       .item{
+
+ 
+        border: 1px solid black;
+        background-color: purple;
+        min-height: 10em;
+        min-width: 10em;
+        margin: 1em;
+
+        
+       }
+
+   
+     
+
+
+    </style>
+    <title>Learn HTML5</title>
+    
+</head>
+<body>
+    <div class="container1">
+
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+
+    </div>
+
+    <br>
+
+    <div class="container2">
+
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+
+    </div>
+
+
+</body>
+</html>
