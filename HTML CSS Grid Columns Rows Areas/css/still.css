@@ -1,0 +1,134 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.container{
+    color: wheat;
+    text-align: center;
+    font-size: 2em;
+}
+
+.container div:nth-child(1n){
+    background-color: goldenrod;
+    }
+
+.container div:nth-child(2n){
+background-color: darkmagenta;
+    }
+
+.container div:nth-child(3n){
+    background-color: darkcyan;
+    }
+
+
+
+
+
+
+.container1{
+    display: grid;
+
+    /*kac adet colums olusacagini ve buyuklugunu belirler*/
+    grid-template-columns: 100px auto 100px;
+    /*3 adet 100pxlik column*/
+    grid-template-columns: repeat(3,100px);
+    /*ekranın boyutuna ve verilen sayilara gore oranlar*/
+    grid-template-columns: 1fr 2fr 3fr;
+
+
+    /*rowların sayisini ve buyuglugunu*/
+    grid-template-rows: 100px 100px;
+    
+    /* column / row */
+    grid-template: 1fr 2fr 3fr/ 2fr 3fr;
+
+    /*column row arasındakı bosluk*/
+    column-gap: 10px;
+    row-gap: 10px;
+    gap:10px;
+}
+
+/*----------------------------------------------------*/
+
+.container2{
+    display: grid;
+    grid-template: 100px 200px 100px 100px / 200px 200px  ;
+    gap: 10px;
+   
+}
+
+.header{
+    /*1. columdan 4.ye kadar kaplasın*/
+    grid-column: 1/4;
+}
+
+.menu{
+    grid-column: 1/2;
+    grid-row: 2/4;
+}
+
+.content{
+    grid-column: 2/4;
+    grid-row: 2/4;
+}
+
+.footer{
+    grid-row-start: 4;
+    grid-column: 1/4;
+}
+
+
+/*-------------------------------------------------*/
+
+.container3{
+    display: grid;
+    grid-template: repeat(4,1fr)/repeat(4,1fr);
+    
+    /*.'lar bosluk*/
+    grid-template-areas:
+     "a a a a"
+     "b b c c"
+     ". . c c"
+     "d d d d";
+    
+}
+
+.first{ grid-area: a;}
+
+.second{grid-area: b;}
+
+.third{grid-area: c;}
+
+.fourth{grid-area: d;}
+
+/*-------------------------------------------------*/
+
+
+/*auto fit
+ekrana sigidirir
+*/
+.container4{
+    display: grid;
+    gap: 10px;
+    /*sayfa boyutu degistiginde sigdirma*/
+    grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+    grid-template-rows: (4,1fr);
+}
+
+/*auto fill*/
+.container5{
+    display: grid;
+    gap: 10px;
+    /*sayfa boyutu degistiginde sigdirma*/
+    grid-template-columns: repeat(auto-fill,minmax(100px,1fr));
+    grid-template-rows: (4,1fr);
+}
+
+
+
+
+
+
+
