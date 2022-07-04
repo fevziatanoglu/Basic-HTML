@@ -1,0 +1,75 @@
+body{
+    height: 200vh;
+}
+
+.parent{
+    padding: 2em;
+    border: 0.4em solid brown;
+    background-color: wheat;
+}
+
+.child{
+    padding: 1em;
+    text-align: center;
+}
+
+
+
+.child1{
+    background-color: blue;
+    /*position relativ 
+    ise top bottom left right seklinde otelenebilir
+    diger elenamlar onun üzerinde gözükmez
+    iki eleman da relative ise z indexi buyuk olan ustte olur
+    */
+    position: relative;
+    top: 10px;
+    left: 10px;
+
+   
+}
+
+.child2{
+    background-color: red;
+    /*
+    position absolute 
+    ise diger elemanlar bu eleman yokmus gibi yerlesir
+    */
+    position: absolute;
+    z-index: 4;
+    /*
+    otelendiginde relative elemanların bitimine otelenir
+    */
+    top: 1px;
+    
+    
+}
+
+.child3{
+    background-color: yellow;
+    position: relative;
+    /*child3 child1in ustunde z indexi buyuk ve relative oldugu icin*/
+    z-index: 1;
+}
+
+.child4{
+    background-color: orange;
+    /*position fixed ise diger elemanlar bu elaman yokmus gibi yerlesir
+    otelendiginde relative elemanların bitimine otelenir
+
+    pencere kaydırılsa da oldugu yerde kalmaya devam eder
+
+    */
+    position: fixed;
+    
+}
+
+.child5{
+    background-color: green;
+    /*parent bitene kadar ekranda kalmaya devam eder*/
+    position: sticky;
+    z-index: 5;
+    top: 0px;
+    
+}
+
